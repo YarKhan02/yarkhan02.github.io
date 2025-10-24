@@ -1,3 +1,6 @@
+![Portfolio Screenshot](cp.png)
+
+
 # Amine Portfolio Website 🌐
 
 Welcome to my **personal portfolio website**! This website showcases my skills, projects, blog posts, and contact information in a modern, responsive, and interactive layout.
