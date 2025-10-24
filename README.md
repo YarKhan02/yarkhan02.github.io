@@ -4,6 +4,12 @@ Welcome to my **personal portfolio website**! This website showcases my skills, 
 
 ---
 
+## Live Demo 🚀
+
+You can view the live website here: [Live Demo](https://dynamic-selkie-d79581.netlify.app/)
+
+---
+
 ## 🚀 Features
 
 - **Hero Section**: Includes a profile image and dynamic typing effect introducing my professions (Web Developer, Designer, Freelancer).  
@@ -63,14 +69,7 @@ portfolio4/
 
 ## 📜 License
 
-Copyright (c) 2025 Amine Hamzaoui
-
-Permission is granted to use, copy, modify, or distribute this software **for personal or educational purposes only**.  
-**The software may NOT be sold or used for commercial purposes in any form, in whole or in part.**
-
-The software is provided "AS IS", without warranty of any kind.
-
-See [LICENSE](LICENSE.md) for full details.
+This project is licensed under the terms described in the [LICENSE](LICENSE) file.
 
 ---
 
@@ -78,9 +77,9 @@ See [LICENSE](LICENSE.md) for full details.
 
 - Email: aminehamzaoui1925@gmail.com   
 - Location: Boumerdès, Algeria  
-- LinkedIn: [Your LinkedIn](#)  
-- GitHub: [Your GitHub](#)  
-- Instagram: [Your Instagram](#)
+- LinkedIn: [LinkedIn](www.linkedin.com/in/mohamed-amine-hamzaoui-a2453a35b)  
+- GitHub: [GitHub](https://github.com/Saboo24)  
+- Instagram: [Instagram](https://www.instagram.com/a__m.i.n__e/?utm_source=ig_web_button_share_sheet)
 
 ---
 
