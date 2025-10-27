@@ -1,4 +1,4 @@
-const professions = ['Web Developer', 'Designer', 'Freelancer'];
+const professions = ['Backend Developer', 'Cloud & Infrastructure Engineer', 'Offensive Security Researcher'];
 let professionIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
