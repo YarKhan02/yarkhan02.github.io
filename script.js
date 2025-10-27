@@ -123,3 +123,26 @@ const skillTags = document.querySelectorAll('.skill-tag');
 skillTags.forEach((tag, index) => {
     tag.style.setProperty('--delay', index);
 });
+
+// Slide-in animations for elements
+const slideElements = document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up');
+
+const slideObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            if (entry.target.classList.contains('slide-in-left')) {
+                entry.target.style.transform = 'translateX(0)';
+            } else if (entry.target.classList.contains('slide-in-right')) {
+                entry.target.style.transform = 'translateX(0)';
+            } else if (entry.target.classList.contains('slide-in-up')) {
+                entry.target.style.transform = 'translateY(0)';
+            }
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+});
+
+slideElements.forEach(element => slideObserver.observe(element));
