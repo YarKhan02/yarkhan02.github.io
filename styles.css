@@ -6,7 +6,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, #000000 0%, #000000 100%);
             color: white;
             overflow-x: hidden;
         }
@@ -21,7 +21,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px 8%;
-            background: rgba(26, 26, 26, 0.95);
+            background: rgba(0, 0, 0, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
@@ -297,7 +297,7 @@
             align-items: flex-start;
             justify-content: center;
             padding: 120px 8% 0 8%;
-            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, #000000 0%, #000000 100%);
             color: white;
             opacity: 0;
             transform: translateY(30px);
