@@ -428,6 +428,10 @@
             margin-left: 20px;
         }
 
+        .code-key {
+            color: #c41e3a;
+        }
+
         /* Slide-in Animation Classes */
         .slide-in-left {
             transform: translateX(-30px);

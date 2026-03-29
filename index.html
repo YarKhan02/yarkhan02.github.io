@@ -59,6 +59,7 @@
                             <span class="skill-tag">Django</span>
                             <span class="skill-tag">Flask</span>
                             <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">Neo4j</span>
                             <span class="skill-tag">PostgreSQL</span>
                             <span class="skill-tag">MySQL</span>
                             <span class="skill-tag">Git</span>
@@ -67,6 +68,8 @@
                             <span class="skill-tag">Terraform</span>
                             <span class="skill-tag">Zap</span>
                             <span class="skill-tag">Burpsuite</span>
+                            <span class="skill-tag">Metasploit</span>
+                            <span class="skill-tag">Pacu</span>
                             <span class="skill-tag">Splunk</span>
                             <span class="skill-tag">Nessus</span>
                             <span class="skill-tag">Maltego</span>
@@ -78,9 +81,9 @@
                 <div class="about-visual slide-in-right">
                     <div class="code-animation">
                         <div class="code-line">const developer = {</div>
-                        <div class="code-line indent">name: 'Wali Yar Khan',</div>
-                        <div class="code-line indent">role: 'Computer Science Student',</div>
-                        <div class="code-line indent">passion: 'Expanding skills and discovering new ways to innovate'</div>
+                        <div class="code-line indent"><span class="code-key">name:</span> 'Wali Yar Khan',</div>
+                        <div class="code-line indent"><span class="code-key">role:</span> 'Computer Science Student',</div>
+                        <div class="code-line indent"><span class="code-key">passion:</span> 'Expanding skills and discovering new ways to innovate'</div>
                         <div class="code-line">};</div>
                     </div>
                 </div>
@@ -99,6 +102,26 @@
                             <h3>Car Workshop Website</h3>
                             <p>Full-stack web development with React and Django</p>
                             <a href="https://detailinghubpk.com" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/terratown.jpeg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <h3>Terra Town</h3>
+                            <p>Built a modular AWS infrastructure automation setup using Terraform and a custom Go provider for secure, end-to-end static website provisioning</p>
+                            <a href="https://github.com/YarKhan02/TerraTown" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/myhandler.jpeg" alt="Project 3">
+                        <div class="portfolio-overlay">
+                            <h3>My Handler</h3>
+                            <p>Built a desktop productivity app using a state-machine model for tasks, enabling reliable tracking, focus insights, and seamless calendar sync</p>
+                            <a href="https://github.com/YarKhan02/MyHandler" target="_blank" class="btn">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -311,18 +334,22 @@
                         <a href="https://github.com/YarKhan02" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <form class="contact-form">
+                <form class="contact-form" action="https://formsubmit.co/yarkhan025@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New message from your portfolio contact form">
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
                     <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Your Message" rows="6" required></textarea>
+                        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
                     </div>
                     <button type="submit" class="btn">Send Message</button>
                 </form>
