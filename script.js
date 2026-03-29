@@ -146,3 +146,49 @@ const slideObserver = new IntersectionObserver((entries) => {
 });
 
 slideElements.forEach(element => slideObserver.observe(element));
+
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm && formStatus) {
+    contactForm.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const originalButtonText = submitButton ? submitButton.textContent : '';
+
+        formStatus.textContent = '';
+        formStatus.classList.remove('success', 'error');
+
+        if (submitButton) {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+        }
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: new FormData(contactForm),
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (!response.ok) {
+                throw new Error('Submission failed');
+            }
+
+            formStatus.textContent = 'Message sent successfully.';
+            formStatus.classList.add('success');
+            contactForm.reset();
+        } catch (error) {
+            formStatus.textContent = 'Could not send message. Please try again in a moment.';
+            formStatus.classList.add('error');
+        } finally {
+            if (submitButton) {
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+            }
+        }
+    });
+}
