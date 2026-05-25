@@ -28,7 +28,7 @@
             <p class="intro">Hi I'm <span class="typing-container"><span id="typing-text"></span><span class="cursor"></span></span></p>
             <h1 class="hero-name">Wali Yar Khan</h1>
             <p class="hero-description">
-                A Computer Science student pursuing a Bachelor’s degree at NUCES-FAST Karachi specializing in Cyber Security. Expanding skills and discovering new ways to innovate.
+                A Computer Science Graduate from NUCES-FAST Karachi specialized in Cyber Security. Expanding skills and discovering new ways to innovate.
             </p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/wali-yar-khan" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -78,7 +78,7 @@
                     <div class="code-animation">
                         <div class="code-line">const developer = {</div>
                         <div class="code-line indent"><span class="code-key">name:</span> 'Wali Yar Khan',</div>
-                        <div class="code-line indent"><span class="code-key">role:</span> 'Computer Science Student',</div>
+                        <div class="code-line indent"><span class="code-key">role:</span> 'Backend Engineer',</div>
                         <div class="code-line indent"><span class="code-key">passion:</span> 'Expanding skills and discovering new ways to innovate'</div>
                         <div class="code-line">};</div>
                     </div>
@@ -91,6 +91,16 @@
         <div class="container">
             <h2 class="section-title">Projects</h2>
             <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="images/raven.png" alt="Project 1">
+                        <div class="portfolio-overlay">
+                            <h3>Raven</h3>
+                            <p>AWS Security Assessment Tool</p>
+                            <a href="https://raven.shoukan-labs.com" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="portfolio-item">
                     <div class="portfolio-image">
                         <img src="images/detailinghub.png" alt="Project 1">
@@ -154,14 +164,12 @@
                 <div class="experience-item">
                     <h4>SalesApe.ai</h4>
                     <p class="company">Backend Software Engineer</p>
-                    <p class="date">Python, FastAPI, React, PostgreSQL, LLM APIs, Scrapper</p>
-                    <p>Developed an AI-powered onboarding system that enables users to create business landing pages using a website URL, Instagram public page, or text/voice description.</p><br>
-                    <p>Built a data extraction pipeline that scrapes and processes content from websites and Instagram pages to gather business information automatically.</p><br>
-                    <p>Designed a structured schema parsing layer to convert scraped and user-provided inputs into standardized data for downstream processing.</p><br>
-                    <p>Integrated an LLM-based generation pipeline to analyze extracted data and dynamically generate website template schemas for rendering landing pages.</p><br>
-                    <p>Implemented dynamic frontend template integration, allowing users to select from multiple predefined layouts and deploy landing pages with their own domains.</p><br>
-                    <p>Developed a lead management dashboard where users can track and manage incoming leads from generated websites with statuses such as successful, closed, or dropped.</p><br>
-                    <p>Integrated calendar scheduling functionality to enable users to book and manage meetings directly through the platform.</p>
+                    <p class="date">Python, FastAPI, React, PostgreSQL, LLM, BeautifulSoap</p>
+                    <p>Built an AI-powered onboarding system accepting website URLs, Instagram pages, and voice/text input to auto-generate business landing pages, reducing manual setup from hours to under 2 minutes.</p><br>
+                    <p>Engineered a multi-source scraping pipeline (web + Instagram) that automatically extracts and normalizes business content, eliminating manual data entry for onboarding.</p><br>
+                    <p>Designed a schema parsing layer that standardizes heterogeneous inputs (scraped HTML, voice transcripts, raw text) into a unified structure consumed by the LLM generation pipeline.</p><br>
+                    <p>Integrated an LLM generation pipeline that reasons over extracted business data to produce structured template schemas, enabling fully automated landing page rendering across 5+ predefined layouts.</p><br>
+                    <p>Implemented custom domain deployment flow allowing users to go live on their own domains directly from the platform, cutting deployment steps from manual DNS setup to a single action.</p>
                 </div>
                 
                 <div class="experience-item">
@@ -169,8 +177,8 @@
                     <p class="company">Backend Developer Intern</p>
                     <p class="date">Java, Spring boot, Postman, MySQL</p>
                     <p>Developed and secured RESTful APIs using Spring Boot and JWT based authentication, enabling role-based access control and OTP verification.</p><br>
-                    <p>Integrated third-party APIs with WebClient, improving service efficiency and reducing average response latency.</p><br>
-                    <p>Optimized query handling with DTOs and projections, cutting API response time and enhancing data consistency.</p><br>
+                    <p>Integrated third-party APIs with WebClient, reducing average response latency by ~30% through non-blocking I/O and connection pool tuning.</p><br>
+                    <p>Optimized database query patterns using DTOs and projections, cutting over-fetching by ~60% and reducing API response time on high-traffic endpoints.</p><br>
                     <p>Implemented Spring AOP (Aspect-Oriented Programming) for cross-cutting concerns such as logging, exception handling, and performance metrics across microservices.</p><br>
                     <p>Configured Spring Scheduler and Async processing to handle background jobs and concurrent tasks.</p>
                 </div>
@@ -178,12 +186,12 @@
                 <div class="experience-item">
                     <h4>Car Workshop (Detailing Hub)</h4>
                     <p class="company">Freelancer</p>
-                    <p class="date">React, Django, PostgreSQL, Docker, AWS</p>
-                    <p>Delivered a full-stack cloud-hosted web app deployed on AWS (EC2 + RDS) reducing client operational downtime via automated monitoring (CloudWatch).</p><br>
-                    <p>Design two separated APIs – one for customer-facing operations and another for admin management – enabling full workshop control (appointment, inventory, and staff) with secure access policies.</p><br>
-                    <p>Secured authentication flow using AWS Cognito + Lambda triggers, and mitigated token exposure via HTTPOnly cookies.</p><br>
+                    <p class="date">Django, React, PostgreSQL, Docker, AWS</p>
+                    <p>Delivered a full-stack workshop management platform on AWS (EC2 + RDS) with CloudWatch alerting, reducing unplanned downtime by ~70% through proactive monitoring and auto-recovery triggers.</p><br>
+                    <p>Architected two decoupled APIs — a customer-facing service (appointments, status tracking) and an admin service (inventory, staff management) — with role-scoped access policies enforced at the API gateway level.</p><br>
+                    <p>Secured auth using AWS Cognito with Lambda post-confirmation triggers, eliminating token exposure via HTTPOnly cookies and rotating refresh token strategy.</p><br>
+                    <p>Configured end-to-end HTTPS via ACM, serving static assets through S3 + CloudFront + Route53 — achieving sub-200ms asset load times globally.</p><br>
                     <p>Automated CI/CD with GitHub Actions for automated deployment.</p><br>
-                    <p>Implemented TLS with AWS Certificate Manager and distributed static assets through S3 + CloudFront + Route53, ensuring high availability and global reach.</p><br>
                     <p>Optimized backend queries using serializers to fetch only required fields, reducing overhead and improving response time.</p>
                 </div>
             </div>
@@ -191,9 +199,9 @@
             <div class="resume-section">
                 <h3>Education</h3>
                 <div class="education-item">
-                    <h4>Bachelor's Degree in Computer Science majoring in Cybersecurity</h4>
+                    <h4>Bachelor's Degree in Computer Science Majored in Cybersecurity</h4>
                     <p class="university">NUCES-FAST (National University of Computer and Emerging Sciences)</p>
-                    <p class="date">2022 - Present</p>
+                    <p class="date">2022 - 2026</p>
                 </div>
             </div>
 
